@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-
-.nav_links{
+.nav_links {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-li,a,button{
-    font-family: "Montserrat",sans-serif;
+
+li, a, button {
+    font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 20px;
     color: #000000;
@@ -18,8 +18,8 @@ td {
     padding: 35px;
 }
 
-header{
-    display:flex;
+header {
+    display: flex;
     height: 50px;
     justify-content: space-between;
     align-items: center;
@@ -27,135 +27,178 @@ header{
     background-color: #aef224;
 }
 
-.hr1{
+.hr1 {
     margin: 0;
     border: 6px solid #aef224;
     border-radius: 5px;
 }
-.hr2{
-    
+
+.hr2 {
     margin: 0;
     border: 3px solid #aef224;
     border-radius: 5px;
     width: 60%;
 }
 
-.logo2{
-    cursor:zoom-in;
-    
+.logo2 {
+    cursor: zoom-in;
 }
-.nav_links{
+
+.nav_links {
     list-style: none;
 }
 
-.nav_links li{
+.nav_links li {
     display: inline-block;
     padding: 0px 20px;
 }
- 
-.nav_links li a{
+
+.nav_links li a {
     transition: all 0.3s ease 0s;
 }
 
-.nav_links li a:hover{
-    color:#b86b46;
+.nav_links li a:hover {
+    color: #b86b46;
 }
 
-button{
+button {
     padding: 9px 25px;
     background-color: #b86b46;
     border: none;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-button:hover{
+button:hover {
     background-color: #f19b73;
 }
 
-
-
-
-body{
+body {
     margin: 0;
     text-align: center;
-    font-family: 'Merriweather', serif; 
+    font-family: 'Merriweather', serif;
 }
-h2{
+
+h2 {
     margin-top: 0;
     font-family: 'Montserrat', sans-serif;
     color: #66BFBF;
 }
 
-h3{
+h3 {
     margin-top: 0;
     font-family: 'Montserrat', sans-serif;
     color: #66BFBF;
 }
 
-.top-container{
-    background-color:#000000;
+.top-container {
+    background-color: #000000;
     position: relative;
-    padding: 300px;;
+    padding: 300px;
 }
 
-.middle-container{
+.middle-container {
     background-color: #F6FFDE;
     margin: 0;
 }
 
-.bottom-container{
+.bottom-container {
     background-color: #aef224;
     padding: 30px;
 }
 
-
-
-.foot a:hover{
+.foot a:hover {
     color: #b86b46;
 }
 
-
-.soci{
+.soci {
     background-color: whitesmoke;
 }
 
-.skills{
+.skills {
     width: 60%;
     font-family: 'Montserrat', sans-serif;
     color: #df7949;
-    margin: 90px auto 90px auto;
+    margin: 90px auto;
     text-align: left;
     line-height: 2;
 }
 
-.skill-row2{
+.skill-row2 {
     padding-top: 100px;
 }
 
-.code-image{
+.code-image {
     width: 25%;
     float: right;
     margin-right: 40px;
 }
 
-.think-image{
+.think-image {
     width: 25%;
     float: left;
     margin-right: 40px;
 }
 
-.accent-green::before{
+.accent-green::before {
     position: relative;
     display: inline-block;
 }
-.foot-logo{
+
+.foot-logo {
     padding: 20px;
     margin-left: 500px;
     float: left;
 }
-.copyright{
+
+.copyright {
     margin-right: 500px;
+}
+
+/* Media queries */
+
+/* For screens smaller than 768px (typically mobile phones) */
+@media (max-width: 767px) {
+    .top-container {
+        padding: 150px;
+    }
+    .skills {
+        width: 90%;
+        margin: 50px auto;
+    }
+    .code-image,
+    .think-image {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+    }
+    .foot-logo,
+    .copyright {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+/* For screens between 768px and 991px (typically tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .top-container {
+        padding: 250px;
+    }
+    .skills {
+        width: 70%;
+        margin: 50px auto;
+    }
+}
+
+/* For screens larger than 992px (typically desktops) */
+@media (min-width: 992px) {
+    .top-container {
+        padding: 300px;
+    }
+    .skills {
+        width: 60%;
+        margin: 90px auto;
+    }
 }
