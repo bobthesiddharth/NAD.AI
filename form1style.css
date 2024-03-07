@@ -23,7 +23,7 @@ li, a, button {
 }
 
 td {
-    padding: 15px;
+    padding: 35px;
 }
 
 header {
@@ -31,7 +31,7 @@ header {
     height: 50px;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 30px 10px;
     background-color: #aef224;
 }
 
@@ -42,13 +42,17 @@ header {
     margin: 0;
 }
 
+.logo2 {
+    cursor: zoom-in;
+}
+
 .nav_links {
     list-style: none;
 }
 
 .nav_links li {
     display: inline-block;
-    padding: 0 20px;
+    padding: 0px 20px;
 }
 
 .nav_links li a {
@@ -59,7 +63,11 @@ header {
     color: #b86b46;
 }
 
-h2,
+h2 {
+    margin-top: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
 h3 {
     margin-top: 0;
     font-family: 'Montserrat', sans-serif;
@@ -86,45 +94,43 @@ p {
     font-size: 25px;
     padding: auto;
 }
-.h1co {
-    background-color: #688946;
-    margin: auto;
-    height: 70px;
-    align-items: center;
-    font-size: 17px;
-    padding: 8px;
-    text-indent: 2px;
-    color: beige;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 500;
-    border-radius: 3px;
-}
+
 .h1co1 {
+    background-color: #81ce34;
     padding: 4px;
     height: 19px;
-    text-align: center;
+    text-align: left;
     font-family: "Noto Sans", sans-serif;
 }
 
 .container1 {
     background-color: #ece2e2;
     border-radius: 3px;
-    padding: 20px;
-    border: 1px solid lightcoral;
+    padding: 2px 20px 15px 20px;
+    border: 1px solid color lightcoral;
 }
 
-
+.h1co {
+    background-color: #81ce34;
+    margin: auto;
+    align-items: center;
+    font-size: 17px;
+    padding: 8px;
+    text-indent: 2px;
+    color: beige;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 50px;
+    border-radius: 3px;
+}
 
 input[type="button"] {
     padding: 15px 10px;
     background-color: #dd2a7e;
     border-radius: 35px;
-    width: 100%;
+    width: 20%;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     border: 0;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 input[type="button"]:hover {
@@ -147,7 +153,6 @@ button:hover {
 
 .bottom-container {
     background-color: #aef224;
-    margin: 0;
     padding: 30px;
 }
 
@@ -155,61 +160,72 @@ button:hover {
     color: #b86b46;
 }
 
-.social-icons {
-    text-align: center;
+table.sec {
+    padding-top: 10px;
+    padding: 90px;
+    border: 2px solid;
+    border-radius: 20px;
 }
 
-.sos,
-.foot-logo,
-.social-icons img {
-    margin: 5px;
+.code-image {
+    width: 25%;
+    float: right;
+    margin-right: 30px;
 }
 
-.footer-links a {
-    display:inline-flex;
-    padding: 25px;
-    margin: 10px 0;
-    color: #000;
-    text-decoration: none;
-    transition: color 0.3s ease;
+.think-image {
+    width: 25%;
+    float: left;
+    margin-right: 30px;
 }
 
-.footer-links a:hover {
-    color: #b86b46;
+.foot-logo {
+    padding: 20px;
+    margin-left: 500px;
+    float: left;
 }
 
 .copyright {
-    text-align: right;
-    margin-top: 20px;
+    margin-right: 500px;
 }
 
-/* Media Query for better responsiveness */
-@media (max-width: 768px) {
-    .nav_links {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+/* Media queries */
 
-    .nav_links li {
-        display: block;
-        padding: 10px 0;
-        text-align: center;
+/* For screens smaller than 768px (typically mobile phones) */
+@media (max-width: 767px) {
+    .top-container {
+        padding: 150px;
     }
-
-    header {
-        padding: 10px;
-    }
-
-    .bottom-container {
-        text-align: center;
-    }
-
     .foot-logo {
-        align-content: center;
+        margin-left: 50px;
     }
-
     .copyright {
-        margin-right: 0;
+        margin-right: 50px;
+    }
+}
+
+/* For screens between 768px and 991px (typically tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .top-container {
+        padding: 250px;
+    }
+    .foot-logo {
+        margin-left: 200px;
+    }
+    .copyright {
+        margin-right: 200px;
+    }
+}
+
+/* For screens larger than 992px (typically desktops) */
+@media (min-width: 992px) {
+    .top-container {
+        padding: 300px;
+    }
+    .foot-logo {
+        margin-left: 500px;
+    }
+    .copyright {
+        margin-right: 500px;
     }
 }
